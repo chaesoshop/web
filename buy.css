@@ -14,6 +14,11 @@ h1{
     font-weight: 100;
 }
 
+h2{
+    font-size: 30px;
+    font-weight: 100;
+}
+
 .contents1{
     font-size: 20px;
     font-weight: lighter;
@@ -127,9 +132,27 @@ h1{
 }
 
 section#main h2#board_title {
-    margin-top:20px;
-    margin-left: 50px;
+    margin-top:50px;
+    margin-bottom: 20px;
     padding:0 0 5px 0;
     text-align: center;
-    /* border-bottom:solid 1px #bbbbbb; */
+    font-weight: bolder;
 }
+
+.footer{
+    display: flex;
+    background: #f1f2f3;
+    padding: 130px;
+  }
+
+  .footer > div:first-child {
+    flex:3;
+    text-align: center;
+    color: rgb(46, 42, 116);
+  }
+
+  .footer > div:last-child {
+    flex:9;
+    color: black;
+    font-size: 13px;
+  }

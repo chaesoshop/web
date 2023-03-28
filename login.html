@@ -1,52 +1,90 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <Link rel="stylesheet" href="login.css">
-    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
-</head>
-<body>
-   <section class="Login-form">
-    <h1>LOGIN</h1>
-    <form action="">
-        <div class="int-area">
-            <input type="text" name="id" id="id"
-            autocomplete="off" required>
-            <label for="id">USER NAME</label>
-        </div>
-        <div class="int-area">
-            <input type="password" name="pw" id="pw"
-            autocomplete="off" required>
-            <label for="pw">PASSWORD</label>
-        </div>
-        <div class="btn-area">
-            <button type="submit">LOGIN</button>
-        </div>
-    </form>
-    <div class="caption">
-        <a href="">비밀번호를 잊어버리셨나요?</a>
-    </div>
-   </section>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="login.css">
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="intro_bg">
+                <div class="header">
+                    <div class="searchArea">
+                        <form>
+                            <input type="search" placeholder="찾는 상품을 검색해 보세요!">
+                            <span>검색</span>
+                        </form>
+                    </div>
+                    <ul class="nav">
+                        <li><a href="#" onclick="location.href='home.html'">홈</a></li>
+                        <li><a href="#" onclick="location.href='sell.html'">판매하기</a></li>
+                        <li><a href="#" onclick="location.href='buy.html'">구매하기</a></li>
+                        <li><a href="#">채소톡</a></li>
+                        <li><a href="#" onclick="location.href='login.html'">로그인/회원가입</a></li>
+                    </ul>
+                </div>
+                <div class="intro_text">
+                    <h1>안전하고 편리한 거래, 채소마켓</h1>
+                    <h4 class="contents1">블록체인으로 새로운 거래를 경험해 보세요!</h4>
+                </div>
+            </div>
 
-   <script>
-    let id = $('#id');
-    let pw = $('#pw');
-    let btn = $('#btn');
+            <section class="Login-form">
+                <h2>로그인</h2>
+                <div id="login">
+                    <form action="">
+                        <div class="int-area">
+                            <input type="text" name="id" id="id"
+                            autocomplete="off" required>
+                            <label for="id">아이디</label>
+                        </div>
+                        <div class="int-area">
+                            <input type="password" name="pw" id="pw"
+                            autocomplete="off" required>
+                            <label for="pw">비밀번호</label>
+                        </div>
+                        <div class="btn-area">
+                            <button type="submit">LOGIN</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="caption1">
+                    <a href="">회원가입</a>
+                </div>
+                <div class="caption2">
+                    <a href="">비밀번호를 잊어버리셨나요?</a>
+                </div>
+            </section>
+            
+            <script>
+                let id = $('#id');
+                let pw = $('#pw');
+                let btn = $('#btn');
+            
+                $(btn).on('Click', function() {
+                    if($(id).val() == "") {
+                        $(id).next('label').addClass('warning');
+                        setTimeout(function() {
+                            $('label').removeClass('warning');
+                        },1500);
+                    }
+                    else if($(pw).val() == ""){
+                        $(pw).next('label').addClass('warning');
+                        setTimeout(function() {
+                            $('label').removeClass('warning');
+                        },1500);
+                    }
+                });
+            </script>
 
-    $(btn).on('Click', function() {
-        if($(id).val() == "") {
-            $(id).next('label').addClass('warning');
-            setTimeout(function() {
-                $('label').removeClass('warning');
-            },1500);
-        }
-        else if($(pw).val() == ""){
-            $(pw).next('label').addClass('warning');
-            setTimeout(function() {
-                $('label').removeClass('warning');
-            },1500);
-        }
-    });
-   </script>
-</body>
+            <div class="footer">
+                <div>chaeso</div>
+                <div>
+                MADE. 이승은 박유은 최수애 홍진주 <br>
+                <br>
+                Sungkyul University Department of Information and Communication Engineering <br>
+                2023 Graduation Products <br>
+            </div>
+
+        </div>
+    </body>
+</html>

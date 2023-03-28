@@ -1,27 +1,113 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
-
-* {margin: 0; padding: 0; box-sizing: border-box;}
-body {
+*{
     font-family: 'Noto Sans KR', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px;
+    color: #000;
+}
+
+h1{
+    font-size: 48px;
+    font-weight: 100;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.contents1{
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.contents1_bold{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.intro_bg{
+    background-image: url("image/intro.png");
+    width: cover;
+    height: 634px;
+}
+
+.header{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-image: url('image/loginintro.png.jpg');
-    background-size: cover;
+    width: 1280px;
+    margin: auto;
+    height: 86px;
 }
 
-body::before{
-    content: "";
-    top: 0; right: 0; bottom: 0; left: 0;
+.searchArea{
+    width: 300px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    margin-top: 24px;
 }
 
-.login-form {position: relative; z-index: 2;}
-.login-form h1 {
-    font-size: 32px; color: #fff;
+.searchArea > form > input{
+    border: none;
+    width: 250px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.0);
+    color: #fff;
+    padding-left: 10px;
+}
+
+.searchArea > form > span{
+    width: 50px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    line-height: 86px;
+    width: calc(1280px - 300px);
+}
+
+.nav > li{
+    margin-left: 84px;
+}
+
+.nav > li > a{
+    color: #fff;
+}
+
+.intro_text{
+    width: 100%;
+    margin: 231px auto 231px auto;
+    text-align: center;
+}
+
+.intro_text > h1,
+.intro_text > h4{
+    color: #fff;
+}
+
+.Login-form {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.Login-form h2 {
+    font-size: 32px; color: black;
     text-align: center;
     margin-bottom: 60px;
+    font-weight: bolder;
 }
+#login {
+    display: inline-block;
+    text-align: center;
+  }
 .int-area {
     width: 400px; position: relative;
     margin-top: 20px;
@@ -29,6 +115,8 @@ body::before{
 .int-area:first-child {margin-top: 0;}
 .int-area input {
     width: 100%;
+    margin-left : auto;
+    margin-right : auto;
     padding: 20px 10px 10px;
     background-color: transparent;
     border: none;
@@ -57,13 +145,16 @@ body::before{
 .int-area input:focus + label,
 .int-area input:valid + label {
     top: -2px;
-    font-size: 13px; color: #166cea;
+    font-size: 13px; color: rgb(46, 42, 116);
 }
 
-.btn-area {margin-top: 30px;}
+.btn-area {
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
 .btn-area button {
     width: 100%; height: 50px;
-    background: green;
+    background: rgb(24, 22, 64);
     color: #fff;
     font-size: 20px;
     border: none;
@@ -71,11 +162,39 @@ body::before{
     cursor: pointer;
 }
 
-.caption {
+.caption1 {
     margin-top: 20px;
     text-align: center;
 }
-.caption a {
+.caption2 {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.caption1 a {
+    font-size: 15px; color: rgb(46, 42, 116);
+    text-decoration: none;
+    font-weight: bolder;
+}
+.caption2 a {
     font-size: 15px; color: #999;
     text-decoration: none;
 }
+
+.footer{
+    display: flex;
+    background: #f1f2f3;
+    padding: 130px;
+  }
+
+  .footer > div:first-child {
+    flex:3;
+    text-align: center;
+    color: rgb(46, 42, 116);
+  }
+
+  .footer > div:last-child {
+    flex:9;
+    color: black;
+    font-size: 13px;
+  }
