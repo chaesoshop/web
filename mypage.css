@@ -1,0 +1,254 @@
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px;
+    color: #000;
+}
+
+h1{
+    font-size: 48px;
+    font-weight: 100;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.con-min-width {  min-width: 1280px;  }
+
+.contents1{
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.contents1_bold{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.intro_bg{
+    background-image: url("image/intro.png");
+    width: cover;
+    height: 634px;
+}
+
+.header{
+    display: flex;
+    width: 1280px;
+    margin: auto;
+    height: 86px;
+}
+
+.searchArea{
+    width: 300px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    margin-top: 24px;
+}
+
+.searchArea > form > input{
+    border: none;
+    width: 250px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.0);
+    color: #fff;
+    padding-left: 10px;
+}
+
+.searchArea > form > span{
+    width: 50px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    line-height: 86px;
+    width: calc(1280px - 300px);
+}
+
+.nav > li{
+    margin-left: 84px;
+}
+
+.nav > li > a{
+    color: #fff;
+}
+
+.intro_text{
+    width: 100%;
+    margin: 231px auto 231px auto;
+    text-align: center;
+}
+
+.intro_text > h1,
+.intro_text > h4{
+    color: #fff;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+div{
+    box-sizing: border-box;
+}
+
+/* alert badge */
+.circle{
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 2.5px;
+    background-color: #ff0000;
+    position: absolute;
+    top: -5px;
+    left: 110%;
+}
+  
+/* 녹색 텍스트 */
+.green{
+    color: #24855b;
+  }
+  
+.wrap{
+    background-color: #F8F8F8;  
+}
+
+/* 회원이름배경 */
+.greenContainer{  
+    height: auto;
+    display: flex;
+}
+
+.greenContainer .name{
+    font-size: 45px;
+    font-weight: bold;
+    padding: 50px;
+    color: rgb(40, 40, 60);
+}
+  
+/*
+.greenContainer .modify{
+    margin-left: auto;
+}
+*/
+
+.greenContainer .profile{
+    margin: auto auto auto 0;
+    background-color: #fff;
+    font-weight: bold;
+    color: #000;
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+    height: 80px;
+    text-align: center;
+}
+
+.profile:active {
+    background-color: rgb(40, 40, 60);
+    color: white;
+}
+  
+/* 판매게시물 , 관심목록 , 회원정보수정 */
+.summaryContainer{
+    background-color: white;  
+    display: flex;  
+    padding: 21px 16px;  
+    height: 90px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* 판매게시물 , 관심목록 , 회원정보수정 */
+.summaryContainer .item{
+    flex-grow: 2
+}
+
+/* 녹색 숫자 */
+.summaryContainer .number{
+    font-size: 19px;
+    font-weight: bold;
+    color: navy;
+}
+
+/* 텍스트 */
+.summaryContainer .item > div:nth-child(2){
+    font-size: 15px;
+}
+
+/*=================== 구매목록 ~ 찜한상품 리스트 ==================*/
+.listContainer{  
+    padding: 0;
+    background-color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.listContainer .item{  
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    color: black;
+    text-decoration: none;  
+    height: 56px;
+    box-sizing: border-box;
+}
+.listContainer .icon{  
+    margin-right: 14px;
+}
+.listContainer .text{
+    font-size: 16px;
+    position: relative;
+}
+.listContainer .right{
+    margin-left: auto;
+}
+
+/*=================== 내지갑의 보유 적립금 들어가는 부분 ================*/
+.listContainer .smallLight{
+    font-size: 14px;
+    color: #c2c2c2;  
+}
+.listContainer .smallLight > span{
+    margin-left: 10px;
+}
+.listContainer .right .blct{
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+/*
+.listContainer .item:hover{
+    background-color: #f8f8f8;
+}
+.infoContainer .item:hover{
+    background-color: #f8f8f8;
+}
+*/
+
+  .footer{
+    display: flex;
+    background: #f1f2f3;
+    padding: 130px;
+  }
+
+  .footer > div:first-child {
+    flex:3;
+    text-align: center;
+    color: rgb(46, 42, 116);
+  }
+
+  .footer > div:last-child {
+    flex:9;
+    color: black;
+    font-size: 13px;
+  }

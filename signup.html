@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+    <link href="signup.css" rel="stylesheet" />
+    <script src="signup.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div>
+            <button type="button" class="backbtn" id="img_btn"><img src="image/backbtn.png" onclick="history.back()"></button>
+        </div>
+
+        <div class="title"><h1 style="color: white; font-size: 23px;">chaeso sign up ! 🍎</h1></div>
+
+        <div class="minititle"><h1 style="color: white">아이디</h1></div>
+        <div class="email">
+            <input id="email" type="text" style="color: white; border: none; background: transparent;" autocomplete="off" placeholder="아이디를 입력해 주세요.">
+            <div id="emailError" class="error"></div>
+        </div>
+
+        <div class="minititle"><h1 style="color: white">이름</h1></div>
+        <div class="name">
+            <input id="name"  type="text" style="color: white; border: none; background: transparent;" autocomplete="off" placeholder="이름을 입력해 주세요.">
+            <div id="nameError" class="error"></div>
+        </div>
+
+        <div class="minititle"><h1 style="color: white">비밀번호</h1></div>
+        <div class="password">
+            <input id="password" type="password" style="color: white; border: none; background: transparent;" placeholder="비밀번호를 입력해 주세요.">
+            <div id="passwordError" class="error"></div>
+        </div>
+
+        <div class="minititle"><h1 style="color: white">비밀번호 확인</h1></div>
+        <div class="passwordCheck">
+            <input id="passwordCheck" type="password" style="color: white; border: none; background: transparent;" placeholder="비밀번호를 다시 한 번 입력해 주세요.">
+            <div id="passwordCheckError" class="error"></div>
+        </div>
+
+        <div class="phone" style="color: white;">
+            <h1 style="color: white">전화번호</h1>
+            <input id="phone1" type="text" style="color: white; border: none; background: transparent;" placeholder="000" size="1" maxlength="3" oninput="changePhone1(); this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"> -
+            <input id="phone2" type="text" style="color: white; border: none; background: transparent;" placeholder="0000" size="3" maxlength="4" oninput="changePhone2(); this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"> -
+            <input id="phone3" type="text" style="color: white; border: none; background: transparent;" placeholder="0000" size="3" maxlength="4" oninput="changePhone3(); this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+        </div>
+
+        <div class="auth">
+            <div id="certificationNumber" style="color: white;">------</div>
+            <button disabled id="sendMessage" onclick="getToken()">인증번호 전송</button>
+        </div>
+
+        <div class="timer">
+            <div id="timeLimit" style="color: white;">03:00</div>
+            <button disabled id="completion" onclick="checkCompletion()">인증확인</button>
+        </div>
+
+        <div class="minititle"><h1 style="color: white">거주 지역</h1></div>
+        <div class="area">
+            <select id="area" style="color: white; border: none; background: transparent; font-size: 13px;">
+                <option selected disabled style="font-size: 13px;">-</option>
+                <option style="color: black; font-size: 13px;">서울특별시</option>
+                <option style="color: black; font-size: 13px;">경기도</option>
+                <option style="color: black; font-size: 13px;">인천광역시</option>
+                <option style="color: black; font-size: 13px;">강원도</option>
+                <option style="color: black; font-size: 13px;">충청북도</option>
+                <option style="color: black; font-size: 13px;">충청남도</option>
+                <option style="color: black; font-size: 13px;">전라북도</option>
+                <option style="color: black; font-size: 13px;">전라남도</option>
+                <option style="color: black; font-size: 13px;">경상북도</option>
+                <option style="color: black; font-size: 13px;">경상남도</option>
+                <option style="color: black; font-size: 13px;">세종특별자치시</option>
+                <option style="color: black; font-size: 13px;">제주특별자치도</option>
+            </select>
+            <div id="areaError" class="error"></div>
+        </div>
+
+        <div class="minititle"><h1 style="color: white">성별</h1></div>
+        <div class="gender" style="color: white;">
+            <input id="gender_man" type="radio" name="gender">&nbsp;남성&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input id="gender_woman" type="radio" name="gender">&nbsp;여성
+            <div id="genderError" class="error"></div>
+        </div>
+
+        <div class="signUp">
+            <button id="signUpButton" disabled onclick="signUpCheck()">가입하기</button>
+        </div>
+
+    </div>
+</body>
+</html>

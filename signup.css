@@ -1,0 +1,161 @@
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0px;
+    box-sizing: border-box;
+    font-size: 13px;
+}
+
+html {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+body {
+    width: 45%;
+    background: rgb(40, 40, 60);
+}
+
+input {
+    border: 1px solid black;
+    border-radius: 3px;
+    line-height: 35px;
+    font-size: 13px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.backbtn {
+    background-color: rgba(0, 0, 0, 0);
+    border:none;
+}
+
+.wrapper {
+    padding: 10px;
+}
+
+div {
+    padding-top: 3px;
+    padding-bottom: 8px;
+}
+
+.title {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.minititle {
+    margin-left: 10px;
+}
+
+.email input {
+    width: 100%;
+}
+
+.name input {
+    width: 100%;
+}
+
+.password input {
+    width: 100%;
+}
+
+.passwordCheck input {
+    width: 100%;
+}
+
+.phone {
+    display: flex;
+    justify-content: space-between;
+    line-height: 35px;
+    margin-left: 10px;
+}
+
+#phone1 {
+    width: 30%;
+    text-align: center;
+}
+
+#phone2 {
+    width: 30%;
+    text-align: center;
+}
+
+#phone3 {
+    width: 30%;
+    text-align: center;
+}
+
+.auth {
+    display: flex;
+    justify-content: space-between;
+}
+
+.timer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.auth div {
+    width: 30%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.auth button {
+    width: 70%;
+}
+
+.timer div {
+    width: 30%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.timer button {
+    width: 70%;
+}
+
+.area {
+    margin-left: 10px;
+}
+
+.area select {
+    width: 100%;
+    height: 40px;
+}
+
+.gender {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-size: 13px;
+}
+
+.signUp button {
+    width: 100%;
+    cursor:pointer;
+    margin-bottom: 40px;
+}
+
+button {
+    cursor: pointer;
+    height: 30px;
+}
+
+.error {
+    font-size: 1px;
+    height: 20px;
+    color:red;
+    font-weight: 700;
+}
+
+.signUp {
+    margin-bottom: 20px;
+}

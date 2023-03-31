@@ -19,6 +19,8 @@ h2{
     font-weight: 100;
 }
 
+.con-min-width {  min-width: 1280px;  }
+
 .contents1{
     font-size: 20px;
     font-weight: lighter;
@@ -196,7 +198,7 @@ section#main #buttons {
   .footer > div:first-child {
     flex:3;
     text-align: center;
-    color: rgb(46, 42, 116);
+    color: rgb(40, 40, 60);
   }
 
   .footer > div:last-child {
