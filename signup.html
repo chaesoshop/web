@@ -16,7 +16,7 @@
 
         <div class="minititle"><h1 style="color: white">아이디</h1></div>
         <div class="email">
-            <input id="email" type="text" style="color: white; border: none; background: transparent;" autocomplete="off" placeholder="아이디를 입력해 주세요.">
+            <input id="email" type="text" style="color: white; border: none; background: transparent;" autocomplete="off"placeholder="아이디를 입력해 주세요.">
             <div id="emailError" class="error"></div>
         </div>
 
@@ -40,9 +40,12 @@
 
         <div class="phone" style="color: white;">
             <h1 style="color: white">전화번호</h1>
-            <input id="phone1" type="text" style="color: white; border: none; background: transparent;" placeholder="000" size="1" maxlength="3" oninput="changePhone1(); this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"> -
-            <input id="phone2" type="text" style="color: white; border: none; background: transparent;" placeholder="0000" size="3" maxlength="4" oninput="changePhone2(); this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"> -
-            <input id="phone3" type="text" style="color: white; border: none; background: transparent;" placeholder="0000" size="3" maxlength="4" oninput="changePhone3(); this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+            <input id="phone1" type="text" style="color: white; border: none; background: transparent;" placeholder="000" size="1"
+            maxlength="3" oninput="changePhone1(); this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"> -
+            <input id="phone2" type="text" style="color: white; border: none; background: transparent;" placeholder="0000" size="3"
+            maxlength="4" oninput="changePhone2(); this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"> -
+            <input id="phone3" type="text" style="color: white; border: none; background: transparent;" placeholder="0000" size="3"
+            maxlength="4" oninput="changePhone3(); this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
         </div>
 
         <div class="auth">
