@@ -153,12 +153,16 @@ section#main h2#board_title {
 
 .page{
     text-align: center;
-    margin-bottom: 50px;
-    margin-top: 10px;
+    margin-bottom: 100px;
+    margin-top: 100px;
 }
 
 .page li{
     display: inline-block;
+}
+
+.page > li:not(:first-child){
+    margin-left: 50px;
 }
 
 .footer{
