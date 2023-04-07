@@ -21,7 +21,7 @@ h2{
 .con-min-width {  min-width: 1280px;  }
 
 .contents1{
-    font-size: 20px;
+    font-size: 22px;
     font-weight: lighter;
 }
 
@@ -110,7 +110,7 @@ h2{
 
 .main_text0 > .contents1{
     text-align: center;
-    font-size: 17px;
+    font-size: 19px;
 }
 
 .icons{
@@ -135,6 +135,16 @@ h2{
 
 .icons > li:not(:last-child){
     margin-right: 20px;
+}
+
+.product_name{
+    font-size: 16px;
+    margin-top: 20px;
+    font-weight: bolder;
+}
+.product_price{
+    font-size: 16px;
+    margin-top: 10px;
 }
 
 .footer{

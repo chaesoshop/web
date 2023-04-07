@@ -22,7 +22,7 @@ h2{
 .con-min-width {  min-width: 1280px;  }
 
 .contents1{
-    font-size: 20px;
+    font-size: 22px;
     font-weight: lighter;
 }
 
@@ -139,6 +139,26 @@ section#main h2#board_title {
     padding:0 0 5px 0;
     text-align: center;
     font-weight: bolder;
+}
+
+.product_name{
+    font-size: 16px;
+    margin-top: 20px;
+    font-weight: bolder;
+}
+.product_price{
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.page{
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+.page li{
+    display: inline-block;
 }
 
 .footer{
