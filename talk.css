@@ -1,58 +1,51 @@
 /* 기본 */
-*{
+* {
     font-family: 'Noto Sans KR', sans-serif;
     list-style: none;
     text-decoration: none;
     border-collapse: collapse;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     color: #000;
 }
-
-h1{
+h1 {
     font-size: 48px;
     font-weight: 100;
 }
-
-h2{
+h2 {
     font-size: 30px;
     font-weight: 100;
 }
-
-.con-min-width {  min-width: 1280px;  }
-
-.contents1{
+.con-min-width {
+    min-width: 1280px;
+}
+.contents1 {
     font-size: 22px;
     font-weight: lighter;
 }
-
-.contents1_bold{
+.contents1_bold {
     font-size: 18px;
     font-weight: bold;
 }
-
-.intro_bg{
+.intro_bg {
     background-image: url("image/intro.png");
     width: cover;
     height: 634px;
 }
-
-.header{
+.header {
     display: flex;
     width: 1280px;
     margin: auto;
     height: 86px;
 }
-
-.searchArea{
+.searchArea {
     width: 300px;
     height: 40px;
     background: rgba(0, 0, 0, 0.3);
     border-radius: 5px;
     margin-top: 24px;
 }
-
-.searchArea > form > input{
+.searchArea > form > input {
     border: none;
     width: 250px;
     height: 40px;
@@ -60,101 +53,83 @@ h2{
     color: #fff;
     padding-left: 10px;
 }
-
-.searchArea > form > span{
+.searchArea > form > span {
     width: 50px;
     color: #fff;
     font-weight: bold;
     cursor: pointer;
 }
-
-.nav{
+.nav {
     display: flex;
     justify-content: flex-end;
     line-height: 86px;
     width: calc(1280px - 300px);
 }
-
-.nav > li{
+.nav > li {
     margin-left: 84px;
 }
-
-.nav > li > a{
+.nav > li > a {
     color: #fff;
 }
-
-.intro_text{
+.intro_text {
     width: 100%;
-    margin: 231px auto 231px auto;
+    margin: 231px auto;
     text-align: center;
 }
-
 .intro_text > h1,
-.intro_text > h4{
+.intro_text > h4 {
     color: #fff;
 }
-
 /* main_text0 */
-
-.main_text0{
+.main_text0 {
     width: 100%;
     height: 601px;
     background: #f1f2f3;
 }
-
-.main_text0 > h1{
+.main_text0 > h1 {
     padding-top: 116px;
     text-align: center;
 }
-
-.main_text0 > .contents1{
+.main_text0 > .contents1 {
     text-align: center;
 }
-
-.icons{
+.icons {
     display: flex;
     width: 1280px;
     margin: auto;
 }
-
-.icons > li{
+.icons > li {
     flex: 1;
     background: white;
     margin-top: 49px;
     height: 302px;
     text-align: center;
 }
-
-.icons > li > .icon_img{
+.icons > li > .icon_img {
     margin-top: 36px;
 }
-
-.icons > li:not(:last-child){
+.icons > li:not(:last-child) {
     margin-right: 20px;
 }
-
 section#main h2#board_title {
-    margin-top:50px;
+    margin-top: 50px;
     margin-bottom: 20px;
-    padding:0 0 5px 0;
+    padding: 0 0 5px;
     text-align: center;
     font-weight: bolder;
 }
-
-.footer{
+.footer {
     display: flex;
     background: #f1f2f3;
     padding: 130px;
-  }
-
-  .footer > div:first-child {
-    flex:3;
+}
+.footer > div:first-child {
+    flex: 3;
     text-align: center;
     color: rgb(40, 40, 60);
-  }
-
-  .footer > div:last-child {
-    flex:9;
+}
+.footer > div:last-child {
+    flex: 9;
     color: black;
     font-size: 13px;
-  }
+}

@@ -1,57 +1,51 @@
-*{
+/* 기본 */
+* {
     font-family: 'Noto Sans KR', sans-serif;
     list-style: none;
     text-decoration: none;
     border-collapse: collapse;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     color: #000;
 }
-
-h1{
+h1 {
     font-size: 48px;
     font-weight: 100;
 }
-
-h2{
+h2 {
     font-size: 30px;
     font-weight: 100;
 }
-
-.con-min-width {  min-width: 1280px;  }
-
-.contents1{
+.con-min-width {
+    min-width: 1280px;
+}
+.contents1 {
     font-size: 22px;
     font-weight: lighter;
 }
-
-.contents1_bold{
+.contents1_bold {
     font-size: 18px;
     font-weight: bold;
 }
-
-.intro_bg{
+.intro_bg {
     background-image: url("image/intro.png");
     width: cover;
     height: 634px;
 }
-
-.header{
+.header {
     display: flex;
     width: 1280px;
     margin: auto;
     height: 86px;
 }
-
-.searchArea{
+.searchArea {
     width: 300px;
     height: 40px;
     background: rgba(0, 0, 0, 0.3);
     border-radius: 5px;
     margin-top: 24px;
 }
-
-.searchArea > form > input{
+.searchArea > form > input {
     border: none;
     width: 250px;
     height: 40px;
@@ -59,40 +53,33 @@ h2{
     color: #fff;
     padding-left: 10px;
 }
-
-.searchArea > form > span{
+.searchArea > form > span {
     width: 50px;
     color: #fff;
     font-weight: bold;
     cursor: pointer;
 }
-
-.nav{
+.nav {
     display: flex;
     justify-content: flex-end;
     line-height: 86px;
     width: calc(1280px - 300px);
 }
-
-.nav > li{
+.nav > li {
     margin-left: 84px;
 }
-
-.nav > li > a{
+.nav > li > a {
     color: #fff;
 }
-
-.intro_text{
+.intro_text {
     width: 100%;
-    margin: 231px auto 231px auto;
+    margin: 231px auto;
     text-align: center;
 }
-
 .intro_text > h1,
-.intro_text > h4{
+.intro_text > h4 {
     color: #fff;
 }
-
 .Login-form {
     position: relative;
     z-index: 2;
@@ -101,7 +88,8 @@ h2{
     margin-bottom: 20px;
 }
 .Login-form h2 {
-    font-size: 32px; color: black;
+    font-size: 32px;
+    color: black;
     text-align: center;
     margin-bottom: 60px;
     font-weight: bolder;
@@ -109,53 +97,67 @@ h2{
 #login {
     display: inline-block;
     text-align: center;
-  }
+}
 .int-area {
-    width: 400px; position: relative;
+    width: 400px;
+    position: relative;
     margin-top: 20px;
 }
-.int-area:first-child {margin-top: 0;}
+.int-area:first-child {
+    margin-top: 0;
+}
 .int-area input {
     width: 100%;
-    margin-left : auto;
-    margin-right : auto;
+    margin-left: auto;
+    margin-right: auto;
     padding: 20px 10px 10px;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #999;
-    font-size: 18px; color: blac;
+    font-size: 18px;
+    color: blac;
     outline: none;
 }
 .int-area label {
-    position: absolute; left: 10px; top: 15px;
-    font-size: 18px; color: #999;
-    transition: all .5s ease;
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    font-size: 18px;
+    color: #999;
+    transition: all 0.5s ease;
 }
-
 .int-area label.warning {
     color: red !important;
-    animation: warning .3s ease;
+    animation: warning 0.3s ease;
     animation-iteration-count: 3;
 }
 @keyframes warning {
-    0% {transform: translateX(-8px);}
-    25% {transform: translateX(8px);}
-    50% {transform: translateX(-8px);}
-    75% {transform: translateX(8px);}
+    0% {
+        transform: translateX(-8px);
+    }
+    25% {
+        transform: translateX(8px);
+    }
+    50% {
+        transform: translateX(-8px);
+    }
+    75% {
+        transform: translateX(8px);
+    }
 }
-
 .int-area input:focus + label,
 .int-area input:valid + label {
     top: -2px;
-    font-size: 13px; color: rgb(40, 40, 60);
+    font-size: 13px;
+    color: rgb(40, 40, 60);
 }
-
 .btn-area {
     margin-top: 70px;
     margin-bottom: 50px;
 }
 .btn-area button {
-    width: 100%; height: 50px;
+    width: 100%;
+    height: 50px;
     background: rgb(40, 40, 60);
     color: #fff;
     font-size: 20px;
@@ -163,7 +165,6 @@ h2{
     border-radius: 25px;
     cursor: pointer;
 }
-
 .caption1 {
     margin-top: 20px;
     text-align: center;
@@ -174,29 +175,28 @@ h2{
     text-align: center;
 }
 .caption1 a {
-    font-size: 15px; color: rgb(40, 40, 60);
+    font-size: 15px;
+    color: rgb(40, 40, 60);
     text-decoration: none;
     font-weight: bolder;
 }
 .caption2 a {
-    font-size: 15px; color: #999;
+    font-size: 15px;
+    color: #999;
     text-decoration: none;
 }
-
-.footer{
+.footer {
     display: flex;
     background: #f1f2f3;
     padding: 130px;
-  }
-
-  .footer > div:first-child {
-    flex:3;
+}
+.footer > div:first-child {
+    flex: 3;
     text-align: center;
     color: rgb(40, 40, 60);
-  }
-
-  .footer > div:last-child {
-    flex:9;
+}
+.footer > div:last-child {
+    flex: 9;
     color: black;
     font-size: 13px;
-  }
+}

@@ -1,59 +1,77 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8" />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <link href="signup.css" rel="stylesheet" />
     <script src="signup.js"></script>
     <link rel="icon" href="image/favicon_io/favicon.ico" type="image/x-icon">
-    <title>회원가입</title>
+    <title>회원가입 - 채소마켓</title>
 </head>
+
 <body>
     <div class="wrapper">
         <div>
             <button type="button" class="backbtn" id="img_btn"><img src="image/backbtn.png" onclick="history.back()"></button>
         </div>
 
-        <div class="title"><h1 style="color: white; font-size: 23px;">chaeso sign up ! 🍎</h1></div>
+        <div class="title">
+            <h1 style="color: white; font-size: 23px;">chaeso sign up ! 🍎</h1>
+        </div>
 
-        <div class="minititle"><h1 style="color: white">아이디</h1></div>
+        <div class="minititle">
+            <h1 style="color: white">아이디</h1>
+        </div>
         <div class="id">
-            <input id="id" type="text" style="color: white; border: none; background: transparent;" autocomplete="off"placeholder="아이디를 입력해 주세요.">
+            <input id="id" type="text" style="color: white; border: none; background: transparent;" autocomplete="off" placeholder="아이디를 입력해 주세요.">
             <div id="idError" class="error"></div>
         </div>
 
-        <div class="minititle"><h1 style="color: white">이메일</h1></div>
+        <div class="minititle">
+            <h1 style="color: white">이메일</h1>
+        </div>
         <div class="email">
-            <input id="email" type="text" style="color: white; border: none; background: transparent;" autocomplete="off"placeholder="이메일을 입력해 주세요.">
+            <input id="email" type="text" style="color: white; border: none; background: transparent;" autocomplete="off" placeholder="이메일을 입력해 주세요.">
             <button id="emailokay">인증하기</button>
             <div id="emailError" class="error"></div>
         </div>
 
-        <div class="minititle"><h1 style="color: white">이름</h1></div>
+        <div class="minititle">
+            <h1 style="color: white">이름</h1>
+        </div>
         <div class="name">
-            <input id="name"  type="text" style="color: white; border: none; background: transparent;" autocomplete="off" placeholder="이름을 입력해 주세요.">
+            <input id="name" type="text" style="color: white; border: none; background: transparent;" autocomplete="off" placeholder="이름을 입력해 주세요.">
             <div id="nameError" class="error"></div>
         </div>
 
-        <div class="minititle"><h1 style="color: white">비밀번호</h1></div>
+        <div class="minititle">
+            <h1 style="color: white">비밀번호</h1>
+        </div>
         <div class="password">
             <input id="password" type="password" style="color: white; border: none; background: transparent;" placeholder="비밀번호를 입력해 주세요.">
             <div id="passwordError" class="error"></div>
         </div>
 
-        <div class="minititle"><h1 style="color: white">비밀번호 확인</h1></div>
+        <div class="minititle">
+            <h1 style="color: white">비밀번호 확인</h1>
+        </div>
         <div class="passwordCheck">
             <input id="passwordCheck" type="password" style="color: white; border: none; background: transparent;" placeholder="비밀번호를 다시 한 번 입력해 주세요.">
             <div id="passwordCheckError" class="error"></div>
         </div>
 
-        <div class="minititle"><h1 style="color: white">전화번호</h1></div>
+        <div class="minititle">
+            <h1 style="color: white">전화번호</h1>
+        </div>
         <div class="phone" style="color: white;">
             <input id="phone" type="text" style="color: white; border: none; background: transparent;" placeholder="- 없이 숫자만 입력해 주세요." maxlength="11" oninput=" this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
             <div id="phoneError" class="error"></div>
         </div>
-        
-        <div class="minititle"><h1 style="color: white">거주 지역</h1></div>
+
+        <div class="minititle">
+            <h1 style="color: white">거주 지역</h1>
+        </div>
         <div class="area">
             <select id="area" style="color: white; border: none; background: transparent; font-size: 13px;">
                 <option selected disabled style="font-size: 13px;">-</option>
@@ -73,7 +91,9 @@
             <div id="areaError" class="error"></div>
         </div>
 
-        <div class="minititle"><h1 style="color: white">성별</h1></div>
+        <div class="minititle">
+            <h1 style="color: white">성별</h1>
+        </div>
         <div class="gender" style="color: white;">
             <input id="gender_man" type="radio" name="gender">&nbsp;남성&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <input id="gender_woman" type="radio" name="gender">&nbsp;여성
@@ -86,4 +106,5 @@
 
     </div>
 </body>
+
 </html>
