@@ -159,12 +159,17 @@ section#main #content textarea {
     height: 400px;
     margin: 5px 5px 5px 0;
 }
-section#main #buttons {
-    text-align: right;
-    font-weight: bold;
-    margin-right: 100px;
-    margin-bottom: 30px;
-    margin-top: 30px;
+.upload {
+    text-align: center;
+    margin: 100px;
+}
+.upload input {
+    padding: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    border: none;
+    background: rgb(40, 40, 60);
+    color: white;
 }
 label {
     cursor: pointer;
